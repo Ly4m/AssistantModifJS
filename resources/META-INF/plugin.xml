@@ -1,0 +1,36 @@
+<idea-plugin version="2">
+  <id>com.your.company.unique.plugin.id</id>
+  <name>JavaScript Correction On-the-fly</name>
+  <version>1.0</version>
+  <vendor email="will.leemans@gmail.com" url="http://www.trollcorporation.be">Troll Corporation</vendor>
+
+  <description><![CDATA[
+      Top Quality JS assistant<br>
+    ]]></description>
+
+  <change-notes><![CDATA[
+    Not yet<br>
+    ]]>
+  </change-notes>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="141.0"/>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <!-- uncomment to enable plugin in all products
+  <depends>com.intellij.modules.lang</depends>
+  -->
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
+
+  <actions>
+
+
+    <action id="EditorBasics.EditorAST" class="EditorAST" text="Fixer" description="Editor AST">
+      <add-to-group group-id="EditorPopupMenu" anchor="last"/>
+    </action>
+  </actions>
+
+</idea-plugin>
